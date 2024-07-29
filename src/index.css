@@ -1,28 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     /* if you want to change the background color, change the background-color: */
     font-family:Georgia, 'Times New Roman', Times, serif; 
-    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.90), url("/img2.jpg"));
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
     /*To change to font, change the font-family.*/
     
 }
 
 h2{
     color: #ffffff; 
-    font-family: "Charmonman", cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
+    font-size: 45px;
     /* if you want to change the color of Your Name and Hero Text Heading,
      change the color: */
 }
 
+h3{
+    color: #000000;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h4{
     color:#FFFFFF; 
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
     /* if you want to change the color of Projects, Contact Me, and Your Resume,
      change the color: */
 }
 
 h5{
-    color: #FFF;
+    color: #000000;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
     /* if you want to change the color of Hero Text Subheading, 
     change the color: */
 }
@@ -52,10 +73,16 @@ img{
     padding-top: 10px;
 }
 
+#icons{
+    display: flex;
+    gap: 25px; /*This separates the Github Logo and the LinkedIn Logo*/
+    margin-right: 5rem;
+}
+
 .bi-github{
     font-size: 25pt;
     color: #FFF; /*This is to change the color of the Github Logo*/
-    text-shadow: 3px 2px 1px #E5989B;
+    text-shadow: 3px 2px 1px #DAB844;
     /*The first two values are for the angle of the shadow.
     The first value deals across the x-axis and the second
     deals across the y-axis. The third value deals with
@@ -67,7 +94,7 @@ img{
 .bi-linkedin{
     font-size: 25pt;
     color: #FFF; /*This is to change the color of the LinkedIn Logo*/
-    text-shadow: 3px 2px 1px #E5989B;
+    text-shadow: 3px 2px 1px #DAB844;
     /*The first two values are for the angle of the shadow.
     The first value deals across the x-axis and the second
     deals across the y-axis. The third value deals with
@@ -77,40 +104,72 @@ img{
     the angle of the shadow, and how far the shadow should extend. */
 }
 
-.intro{
+
+/* Nav Hovering Effect */
+.nav-link{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-link:after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #DAB844;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+.custom-navbar{
+    position: absolute;
+    top: 0; /* Align to the top of the header */
+    right: 0; /* Align to the left of the header */
+    width: 100%; /* Full width */
+    z-index: 10; /* Higher value to ensure it overlays other elements */
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("assets/headshot.jpg");
+    background-size: contain;
+    background-position:initial;
+    background-size: 
+    33.33%;
+    background-repeat:repeat-x;
+
+    padding-top: 600px; /* Add padding to compensate for the fixed navbar */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+#about-me {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+  margin-top: -80px; /* Adjust this value to offset the padding */
+}
+
+
+.aboutme{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 300px;
-    padding-top: 50px;
+    padding-top: 800px;
 
 }
 
-.nav-link:hover{
-    color: black;
-}
-
-.custom-navbar{
-    background-color: transparent;
-    /* background-color is to change the color of the navbar.
-    navbar is where Your Name and the other buttons appear.
-    Right now it is set to transparent, which means there is no color.
-    Since the background color of the body is set, the navbar appears 
-    to have that color as well.*/
-    align-items: center;
-    justify-content: start;
-}
-
-.twobuttons{
-    display: flex;
-    margin-left: 200px;
-    gap: 20px; /*This separates the Projects and Contact Me button*/
-    margin-right: 300px;
-}
-
-
-#icons{
-    display: flex;
-    gap: 25px; /*This separates the Github Logo and the LinkedIn Logo*/
-    margin-right: 5rem;
-}
