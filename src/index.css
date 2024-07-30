@@ -1,16 +1,9 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body{
     /* if you want to change the background color, change the background-color: */
-    font-family:Georgia, 'Times New Roman', Times, serif; 
     margin: 0;
     padding: 0;
     text-align: center;
-
-    /*To change to font, change the font-family.*/
-    
+    /*To change to font, change the font-family.*/ 
 }
 
 h2{
@@ -23,13 +16,6 @@ h2{
      change the color: */
 }
 
-h3{
-    color: #000000;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 h4{
     color:#FFFFFF; 
     font-family: "Nanum Myeongjo", serif;
@@ -39,7 +25,7 @@ h4{
      change the color: */
 }
 
-h5{
+h3, h5, p{
     color: #000000;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
@@ -157,19 +143,136 @@ img{
     z-index: 1;
 }
 
-
-#about-me {
-  padding-top: 80px; /* Adjust this value based on your navbar height */
-  margin-top: -80px; /* Adjust this value to offset the padding */
-}
-
-
-.aboutme{
+.about-me{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 300px;
     padding-top: 800px;
+}
+
+.aboutme-container{
+    background-color: #b3a39d;
+    padding: 150px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    color: white; /* Optional: to make text readable on the background */
+}
+
+.image-overlay-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .main-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.5; /* Adjust opacity as needed */
+  }
+.exp-container{
+    background-color: #728394;
+    padding: 150px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    color: white; /* Optional: to make text readable on the background */
+    
+}
+
+.extra-container{
+    background-color: #494949;
+    padding: 150px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    color: white; /* Optional: to make text readable on the background */
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/*.contact-left-title h2 is in charge of
+'Get in Touch'. */
+.contact-left-title h2{
+    font-weight: 600;
+    color: #B5838D;
+    /*to change the color of the text, change this ^*/
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/*.contact-left-title hr is in charge of
+the line that is underneath 'Get in Touch'*/
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #B5838D;
+    /*to change the color of the line, change this ^*/
+    border-radius: 10px;
+    margin-bottom: 20px;
 
 }
 
+/*to change the colors of your responses to
+'Your Email, Your Name, Your Message'*/
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #E5989B; /*change this*/
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+/*after you press an input to type, the border of the input field
+is boldened. To change the color of the 'active' or 'selected'
+border, */
+.contact-inputs:focus{
+    border: 2px solid #6D6875; /*change this hex color*/
+}
+
+/*to change the colors of 'Your Email, Your Name, Your Message'*/
+.contact-inputs::placeholder{
+    color:#B5838D /*change this*/
+}
+
+/*.contact-left button is in charge of the button in the 
+web form that says 'Submit'*/
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #FFF;
+    /*to change the font color, change this ^*/
+    gap:10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #E5989B,#FFB4A2);
+    /*to change the color of the button, change this ^.
+    You can remove linear-gradient and enter a hex color.
+    You can also simply replace the current hex colors with
+    hex colors of your choice.*/
+    cursor:pointer;
+}
