@@ -301,3 +301,55 @@ web form that says 'Submit'*/
     margin-top: 610px; /* Add space between the form and the links */
     text-align: center;
 }
+
+
+.timeline {
+    position: relative;
+    padding: 1em 0;
+    list-style: none;
+}
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #d4d4d4;
+    content: '';
+    left: 50%;
+    margin-left: -2px;
+}
+.timeline > li {
+    position: relative;
+    min-height: 50px;
+    padding: 20px 0;
+}
+.timeline > li:before,
+.timeline > li:after {
+    content: "";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li > .timeline-panel {
+    width: 44%;
+    float: right;
+    position: relative;
+    text-align: left;
+}
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    display: inline-block;
+    border-top: 12px solid transparent;
+    border-left: 12px solid #d4d4d4;
+    border-right: 0 solid #d4d4d4;
+    border-bottom: 12px solid transparent;
+    content: '';
+}
+.timeline > li > .timeline-time {
+    position: absolute;
+    width: 20%;
+    text-align: right;
+    padding-left: 0px;
+    top: 20px;
+}
