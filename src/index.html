@@ -36,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link ms-auto" href="#about-me"><h4>About Me</h4></a>
-                <a class="nav-link ms-auto" href="#Experience"><h4>Experience</h4></a>
+                <a class="nav-link ms-auto" href="#experience"><h4>Experience</h4></a>
                 <a class="nav-link ms-auto" aria-current="page" href="projects.html"><h4>Projects</h4></a>
                 <a class="nav-link ms-auto" href="assets/LizethChavez.pdf" target="_blank" download><h4>Resume</h4></a>
                 <a class="nav-link ms-auto" href="#Contact"><h4>Contact Me</h4></a>
@@ -46,54 +46,72 @@
       </nav>
     </header>
     <section id="about-me" class="aboutme">
-      <div class="aboutme-container">
-        <div class="row">
-          <header class="text-center">
-            <h3>About Me</h3>
+      <div class="container-fluid">
+          <header class="text-center pt-5">
+              <h3>About Me</h3>
           </header>
-          <div class="col-lg-6 col-md-6">
-            <div class="image-overlay-container">
-                <!-- Main image (color) -->
-                <img src="assets/normal.jpg" alt="Lizeth's Photo" class="img-fluid main-image">
-                <!-- Overlay image (grayscale) -->
-                <img src="assets/greyscale.jpg" alt="Lizeth's Photo Grayscale" class="img-fluid overlay-image">
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <article>
-                <header>
-                  <h3>Hi, I'm Lizeth</h3>
-                </header>
-                <p>
-                  A first-generation, first-year Master's student at the University of Texas Rio Grande Valley, specializing in Computer Science with a focus on software engineering, databases, and computer vision. Additionally, I have a strong interest in project management and graphic design. As the Co-President of Frontera Devs, I've been breaking tech barriers within the Hispanic community through initiatives like the Frontera Hacks Hackathon and other impactful events. I'm a passionate lifelong learner in technology, dedicated to innovation and enhancing user experiences through creativity. I value community and collaboration, by supporting and contributing to the tech community.
-                </p>
-                <button type="download-resume">Download Resume</button>
-              </article>
-            </div>
+          <div class="row">
+              <div class="col-lg-6 col-md-6">
+                  <img src="assets/normal.jpg" alt="Lizeth's Photo" class="img-fluid main-image">
+              </div>
+              <div class="col-lg-6 col-md-6">
+                  <article class="summary">
+                      <header>
+                          <h3>Hi, I'm Lizeth</h3>
+                      </header>
+                      <p>
+                          A first-generation, first-year Master's student at the University of Texas Rio Grande Valley, specializing in Computer Science with a focus on software engineering, databases, and computer vision. Additionally, I have a strong interest in project management and graphic design. As the Co-President of Frontera Devs, I've been breaking tech barriers within the Hispanic community through initiatives like the Frontera Hacks Hackathon and other impactful events. I'm a passionate lifelong learner in technology, dedicated to innovation and enhancing user experiences through creativity. I value community and collaboration, by supporting and contributing to the tech community.
+                      </p>
+                      <button type="button" class="btn btn-primary">Download Resume</button>
+                  </article>
+              </div>
           </div>
           <div class="row mt-5">
-          <div class="col-lg-6 col-md-6 pt-5">
-            <article>
-              <header>
-                <h3>Education</h3>
-              </header>
-              <p>South Texas College. University of Texas Rio Grande Valley</p>
-            </article>
+              <div class="col-lg-6 col-md-6 pt-5">
+                  <article>
+                      <header>
+                          <h3>Education</h3>
+                      </header>
+                        <ul class="timeline pt-5">
+                            <li>
+                                <div class="timeline-time">2024 -2026</div>
+                                <div class="timeline-panel">
+                                    <h4 class="timeline-title">University Of Texas Rio Grande Valley</h4>
+                                    <p>Master's Degree in Computer Science</p>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="timeline-time">2022 -2024</div>
+                              <div class="timeline-panel">
+                                  <h4 class="timeline-title">University Of Texas Rio Grande Valley</h4>
+                                  <p>Bachelor's Degree in Computer Science</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-time">2019 -2021</div>
+                              <div class="timeline-panel">
+                                  <h4 class="timeline-title">South Texas College</h4>
+                                  <p>Associate's in Interdisiplinary of Science</p>
+                              </div>
+                             </li>
+                        </ul>
+                  </article>
+              </div>
+              <div class="col-lg-6 col-md-6 pt-5">
+                  <article>
+                      <header>
+                          <h3>Languages</h3>
+                      </header>
+                      <p>Python, C++, Java, SQL, HTML/CSS, Flutter</p>
+                  </article>
+              </div>
           </div>
-          <div class="col-lg-6 col-md-6 pt-5">
-            <article>
-              <header>
-                <h3>Languages</h3>
-              </header>
-              <p>Python, C++, Java, SQL, HTML/CSS, Flutter</p>
-            </article>
-          </div>
-         </div>
-        </div>
       </div>
-    </section>    
+  </section>
     
-      <section  id="Experience" class="Experience" >
-        <div class="exp-container">
+    
+      <section  id="experience" class="experience" >
+        <div class="container-fluid">
             <div class="row">.
                 <div class="col-lg-6 col-md-6">
                   <h3>Experience</h3>
@@ -114,7 +132,7 @@
         </div>
       </section>
       <section id="extra" class="extra">
-        <div class="extra-container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <h3>Certificates</h3>
@@ -152,10 +170,13 @@
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             <button type="submit">Submit</button>
-
-            <a class="nav-link ms-auto" href="https://www.linkedin.com/in/lizethachavez/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a class="nav-link ms-auto" href="https://github.com/LCRazo" target="_blank"><i class="bi bi-github"></i></a>
           </form>
+          <div class="links">
+            <a class="footer-link ms-auto" href="https://www.linkedin.com/in/lizethachavez/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a class="footer-link ms-auto" href="https://github.com/LCRazo" target="_blank"><i class="bi bi-github"></i></a>
+            <a class="footer-link ms-auto" href="https://discordapp.com/users/lizrazo" target="_blank"><i class="bi bi-discord"></i></a>
+            <p>© 2024 All Rights Reserved</p>
+          </div> 
         </div>
       </footer>
 </body>
