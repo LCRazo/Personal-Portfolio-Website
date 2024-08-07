@@ -1,16 +1,26 @@
-body{
+body, html{
     margin: 0;
     padding: 0;
+    height: 100%;
     text-align: center;
 }
 
 /* Fonts */
 h2{
     color: #ffffff; 
-    font-family: "Great Vibes", cursive;
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+.summary h3{
+    font-family: "Licorice", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
+    color: #000000;
 }
 
 h4{
@@ -20,6 +30,12 @@ h4{
     font-style: normal;
 }
 
+.timeline-panel h4{
+    color:#000000; 
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 h3, h5, p{
     color: #000000;
     font-family: "Nanum Myeongjo", serif;
@@ -43,22 +59,7 @@ h3, h5, p{
     border-radius: 50px;
 }
 
-.img-container{
-    width: 700px;
-    height: 550px;
-    overflow: hidden;
-}
-
-.img-container img{
-    /* To change the dimensions of the image, modify the
-    width and height properties. */
-    width: 400px;
-    height: 500px;
-    object-fit:cover;
-}
-
 /* Icons */
-
 .bi-github{
     font-size: 20pt;
     color: #FFF; /*This is to change the color of the Github Logo*/
@@ -118,7 +119,7 @@ h3, h5, p{
     content:'';
     height: 3px;
     width: 0;
-    background: #DAB844;
+    background: #CEB8A3;
     position: absolute;
     left: 0;
     bottom: -10;
@@ -141,12 +142,9 @@ h3, h5, p{
 /* About Me */
 .header{
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("assets/headshot.jpg");
-    background-size: contain;
-    background-position:initial;
-    background-size: 
-    33.33%;
+    background-position: initial;
+    background-size: 33.33%;
     background-repeat:repeat-x;
-
     padding-top: 600px; /* Add padding to compensate for the fixed navbar */
     text-align: center;
     position: relative;
@@ -159,6 +157,24 @@ h3, h5, p{
     justify-content: center;
     margin-right: 300px;
     padding-top: 800px;
+}
+
+.summary a{
+    display: flex;
+    align-items: right;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #212121;
+    /*to change the font color, change this ^*/
+    gap:10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #E5989B,#CEB8A3);
+    /*to change the color of the button, change this ^.
+    You can remove linear-gradient and enter a hex color.
+    You can also simply replace the current hex colors with
+    hex colors of your choice.*/
+    cursor:pointer;
 }
 
 .aboutme-container{
@@ -194,6 +210,7 @@ width: 100%;
     padding-right: 5px;
     color: black;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .experience{
@@ -316,14 +333,15 @@ web form that says 'Submit'*/
 }
 
 .links {
-    margin-top: 610px; /* Add space between the form and the links */
+    margin-top: 10px; /* Add space between the form and the links */
     text-align: center;
 }
 
 
 .timeline {
+    margin-top: 50px;
     position: relative;
-    padding: 1em 0;
+    padding: 0;
     list-style: none;
 }
 .timeline:before {
@@ -334,12 +352,12 @@ web form that says 'Submit'*/
     background: #d4d4d4;
     content: '';
     left: 50%;
-    margin-left: -2px;
+    margin-left: -5px;
 }
 .timeline > li {
     position: relative;
     min-height: 50px;
-    padding: 20px 0;
+    padding: 90px;
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -356,7 +374,7 @@ web form that says 'Submit'*/
     text-align: left;
 }
 .timeline > li > .timeline-panel:before {
-    position: absolute;
+    position: relative;
     display: inline-block;
     border-top: 12px solid transparent;
     border-left: 12px solid #d4d4d4;

@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Baskervville+SC&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Baskervville+SC&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Hurricane&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Baskervville+SC&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Hurricane&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Baskervville+SC&family=Charmonman&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Hurricane&family=Italiana&family=Licorice&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,700;1,400;1,700&family=Baskervville+SC&family=Beau+Rivage&family=Charmonman&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Hurricane&family=Italiana&family=Licorice&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
     <!-- Link to CSS -->
     <link rel="stylesheet" href="index.css">
 
@@ -47,48 +52,56 @@
     </header>
     <section id="about-me" class="aboutme">
       <div class="container-fluid">
-          <header class="text-center pt-5">
+          <header class="text-center pt-5 pb-5">
               <h3>About Me</h3>
           </header>
-          <div class="row">
-              <div class="col-lg-6 col-md-6">
-                  <img src="assets/normal.jpg" alt="Lizeth's Photo" class="img-fluid main-image">
+          <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                  <img src="assets/normal.jpg" alt="Lizeth's Photo" class="img-thumbnail main-image">
               </div>
-              <div class="col-lg-6 col-md-6">
-                  <article class="summary">
+              <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                  <article class="summary ">
                       <header>
                           <h3>Hi, I'm Lizeth</h3>
                       </header>
                       <p>
                           A first-generation, first-year Master's student at the University of Texas Rio Grande Valley, specializing in Computer Science with a focus on software engineering, databases, and computer vision. Additionally, I have a strong interest in project management and graphic design. As the Co-President of Frontera Devs, I've been breaking tech barriers within the Hispanic community through initiatives like the Frontera Hacks Hackathon and other impactful events. I'm a passionate lifelong learner in technology, dedicated to innovation and enhancing user experiences through creativity. I value community and collaboration, by supporting and contributing to the tech community.
                       </p>
-                      <button type="button" class="btn btn-primary">Download Resume</button>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a type="button" class="btn btn-primary" href="assets/LizethChavez.pdf" target="_blank" download>Download Resume</a>
+                      </div>
                   </article>
               </div>
           </div>
-          <div class="row mt-5">
+          <div class="row justify-content-center">
               <div class="col-lg-6 col-md-6 pt-5">
-                  <article>
+                  <article class="pb-5">
                       <header>
                           <h3>Education</h3>
                       </header>
-                        <ul class="timeline pt-5">
+                        <ul class="timeline pt-5 pb-3">
                             <li>
-                                <div class="timeline-time">2024 -2026</div>
+                                <div class="timeline-time">
+                                  <p class="font-weight-bold">2024 -2026</p>
+                                </div>
                                 <div class="timeline-panel">
                                     <h4 class="timeline-title">University Of Texas Rio Grande Valley</h4>
                                     <p>Master's Degree in Computer Science</p>
                                 </div>
                             </li>
                             <li>
-                              <div class="timeline-time">2022 -2024</div>
+                              <div class="timeline-time">
+                                <p class="font-weight-bold">2022 -2024</p>
+                              </div>
                               <div class="timeline-panel">
                                   <h4 class="timeline-title">University Of Texas Rio Grande Valley</h4>
                                   <p>Bachelor's Degree in Computer Science</p>
                               </div>
                             </li>
                             <li>
-                              <div class="timeline-time">2019 -2021</div>
+                              <div class="timeline-time d-flex justify-content-end">
+                                <p class="">2019 -2021</p>  
+                              </div>
                               <div class="timeline-panel">
                                   <h4 class="timeline-title">South Texas College</h4>
                                   <p>Associate's in Interdisiplinary of Science</p>
@@ -97,45 +110,45 @@
                         </ul>
                   </article>
               </div>
-              <div class="col-lg-6 col-md-6 pt-5">
-                  <article>
+              <div class="col-lg-6 col-md-6">
+                  <article class="pt-5">
                     <header>
-                        <h3>Programming</h3>
+                        <h3>Programming Skills</h3>
                     </header>
-                    <div class="skill pt-5">
-                        <h5 class="text"> HTML/CSS</h5>
+                    <div class="skill pt-5 pb-3">
+                        <h5 class="text d-flex justify-content-start"> HTML/CSS</h5>
                         <div class="Progress">
                             <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                         </div>
                     </div>
-                    <div class="skill">
-                      <h5 class="text">Python</h5>
+                    <div class="skill pb-3">
+                      <h5 class="text d-flex justify-content-start">Python</h5>
                       <div class="Progress">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div>
                       </div>
                     </div>
-                    <div class="skill">
-                      <h5 class="text">C++</h5>
+                    <div class="skill pb-3">
+                      <h5 class="text d-flex justify-content-start">C++</h5>
                       <div class="Progress">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div>
                       </div>
                     </div>
-                    <div class="skill">
-                      <h5 class="text">Java</h5>
+                    <div class="skill pb-3">
+                      <h5 class="text d-flex justify-content-start">Java</h5>
                       <div class="Progress">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">60%</div>
                       </div>
                     </div>
-                    <div class="skill">
-                      <h5 class="text">SQL</h5>
+                    <div class="skill pb-3">
+                      <h5 class="text d-flex justify-content-start">SQL</h5>
                       <div class="Progress">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">60%</div>
                       </div>
                     </div>
-                    <div class="skill">
-                      <h5 class="text">Flutter</h5>
+                    <div class="skill pb-3">
+                      <h5 class="text d-flex justify-content-start">Flutter</h5>
                       <div class="Progress">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">60%</div>
                       </div>
                     </div>
                   </article>
@@ -147,7 +160,7 @@
     
       <section  id="experience" class="experience" >
         <div class="container-fluid">
-            <div class="row">.
+            <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6">
                   <h3>Experience</h3>
 
@@ -194,23 +207,25 @@
       </section>
 
       <footer id="Contact">
-        <div class="contact-container">
-          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="container-fluid">
+          <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
               <h2>Get in touch</h2>
               <hr>
             </div>
-             <input type="hidden" name="access_key" value="">  <!--The value needs to be changed. Go to Web3Forms site. -->
+             <input type="hidden" name="access_key" value="116fbd0b-dc95-4f2e-8ab9-68cd28904949">  <!--The value needs to be changed. Go to Web3Forms site. -->
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             <button type="submit">Submit</button>
-          </form>
+            </form>
+          </div>
           <div class="links">
             <a class="footer-link ms-auto" href="https://www.linkedin.com/in/lizethachavez/" target="_blank"><i class="bi bi-linkedin"></i></a>
             <a class="footer-link ms-auto" href="https://github.com/LCRazo" target="_blank"><i class="bi bi-github"></i></a>
             <a class="footer-link ms-auto" href="https://discordapp.com/users/lizrazo" target="_blank"><i class="bi bi-discord"></i></a>
-            <p>© 2024 All Rights Reserved</p>
+            <p class="text-white pt-3">© 2024 All Rights Reserved</p>
           </div> 
         </div>
       </footer>
