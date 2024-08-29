@@ -53,8 +53,7 @@ h3, h5, p{
 
 /* Images */
 
-.main-image{
-    
+.main-image{ 
     height: auto;
     border-radius: 50px;
 }
@@ -122,7 +121,7 @@ h3, h5, p{
     background: #CEB8A3;
     position: absolute;
     left: 0;
-    bottom: -10;
+    bottom: -10px;
     transition: 0.5s;
 }
 
@@ -223,6 +222,17 @@ width: 100%;
     justify-content: center;
 
     
+}
+
+.accomplishment-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    width: 300px; /* Adjust based on your design */
+    margin: 0 auto;
 }
 
 .extra{
